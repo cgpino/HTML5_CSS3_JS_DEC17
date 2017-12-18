@@ -3,6 +3,9 @@
 
 <head>
     <title>Batman</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/grid.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
 
 <body>
@@ -31,28 +34,33 @@
 
     <header class="header">
         <h1 class="header__title">Batman</h1>
-        <img class="header__image" src="./images/batman.jpg" alt="Foto de Batman">
+        <!--<img class="header__image" src="./images/batman.jpg" alt="Foto de Batman">-->
+        <div class="header__image"></div>
         <p class="header__cite">"Él puede tomar la decisión que nadie más puede, la decisión correcta"</p>
     </header>
 
     <main class="container">
-        <section id="quien-soy" class="about-me">
-            <div class="about-me__video">
-                <video id="video" width="550" height="300" controls>
-                    <source src="./video/batman.mp4" type="video/mp4">
-                </video>
-            </div>
-            <div class="about-me__info">
-                <h2>Quien soy</h2>
-                Batman:
-                <span class="about-me__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea sint eligendi in, velit distinctio, natus, eius
-                    quae praesentium optio ex consectetur iste fugit harum odit? Soluta laborum aspernatur asperiores maxime.</span>
+        <section id="quien-soy" class="section-container">
+            <div class="about-me clearfix">
+                <div class="about-me__video">
+                    <video id="video" width="550" height="300" controls>
+                        <source src="./video/batman.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="about-me__info">
+                    <h2>Quien soy</h2>
+                    Batman:
+                    <span class="about-me__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea sint eligendi in, velit distinctio, natus,
+                        eius quae praesentium optio ex consectetur iste fugit harum odit? Soluta laborum aspernatur asperiores
+                        maxime.
+                    </span>
+                </div>
             </div>
         </section>
 
-        <section id="equipo" class="team">
-            <div>
-                <div>
+        <section id="equipo" class="section-container">
+            <div class="row">
+                <div class="col-4">
                     <article class="team-member">
                         <header>
                             <h3>
@@ -61,7 +69,7 @@
                             </h3>
                             <h4 class="team-member__position">Mayordomo</h4>
                         </header>
-                        <figure class="team-membe__photo photo">
+                        <figure class="team-member__photo photo">
                             <img src="./images/alfred.jpg" alt="Alfred Pennyworth">
                             <figcaption class="photho__name">
                                 Alfred Pennyworth
@@ -72,7 +80,7 @@
                         </p>
                     </article>
                 </div>
-                <div>
+                <div class="col-4">
                     <article class="team-member">
                         <header>
                             <h3>
@@ -100,7 +108,7 @@
                         </p>
                     </article>
                 </div>
-                <div>
+                <div class="col-4">
                     <article class="team-member">
                         <header>
                             <h3>
@@ -125,7 +133,7 @@
         </section>
 
         <section id="transporte" class="transport">
-            <div>
+            <div class="row-flex">
                 <div class="transport-item">
                     <figure>
                         <img class="transport-item__image" src="./images/car.jpg" alt="Coche">
@@ -148,7 +156,7 @@
         </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer row-flex">
         Sergio Fernández &copy; 2017 KeepCoding
     </footer>
 </body>
